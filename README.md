@@ -79,9 +79,9 @@ answer question 6
 
 6.1 AtomicLong is fastest.
 	ReentrantLock is slowest.
+	
 6.2 i think use the ReentrantLock is a better way for this situation because ReentrantLock do the same thing at 	synchronized but Lock can unlock cross the method that useful than synchronized and better than AtomicXXX, 	because AtomicXXX need class to know the object of variable for example.
-
-the application have 4 threads and add item to store that have two method sortItem() and 	addItem() that 	we want to run one thread only for List. If i'm used AtomicXXX it'll be 	a 	hard code.Than if i'm used synchronized it's actually work but if you want to lock 	one thread in sortItem() and unlock when finished addItem() it's pretty useful than 	synchronized to used ReentrantLock.
+	the application have 4 threads and add item to store that have two method sortItem() and 	addItem() that 	we want to run one thread only for List. If i'm used AtomicXXX it'll be 	a 	hard code.Than if i'm used synchronized it's actually work but if you want to lock 	one thread in sortItem() and unlock when finished addItem() it's pretty useful than 	synchronized to used ReentrantLock.
 
 		
 	

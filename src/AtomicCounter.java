@@ -10,7 +10,7 @@ public class AtomicCounter extends Counter {
 	public AtomicCounter() {
 		total = new AtomicLong();
 	}
-	
+	@Override
 	public void add(int amount) {
 		total.getAndAdd(amount);
 	}
